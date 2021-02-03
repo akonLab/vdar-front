@@ -1,0 +1,76 @@
+.main {
+    width: 100%;
+    background-color: #F0E9E8;
+}
+
+.search {
+    position: relative;
+    width: 50%;
+    margin: 3% auto 0;
+}
+
+.search input {
+    width: calc(100% - 3vmin);
+    padding: 10px 0;
+    font-size: 16px;
+    color: #003044;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #003044;
+    outline: none;
+    background: transparent;
+}
+
+.search label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FEC061;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.search img {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    width: 3vmin;
+}
+
+.search img:hover {
+    cursor: pointer;
+}
+
+.search input:focus~label,
+.search input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #FEC061;
+    font-size: 12px;
+}
+
+
+/* container of product cards */
+
+.cat-container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width:770px) {
+    .search {
+        width: 70%;
+        margin: 8% auto 0;
+    }
+}
+
+@media(max-width:420px) {
+    .search {
+        width: 80%;
+        margin: 8% auto 0;
+    }
+}

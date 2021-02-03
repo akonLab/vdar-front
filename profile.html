@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>vdar</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- frontend was made with love, from Akniet Adil ;) -->
+    <!--Css-->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/profile.css">
+    <!-- icons -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--jquery-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!-- js for front-->
+    <script src="./script/index.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header p-2 d-flex row justify-content-around">
+        <div class="logo my-auto">
+            <img class="my-auto" src="./images/vdar-orange.png" alt="">
+        </div>
+
+        <div class="row">
+            <!-- categories -->
+            <div class="categories my-auto dropdown-toggle" onclick="openNav()">
+                Categories
+            </div>
+
+            <!-- menu -->
+            <div class="menu dropdown d-block d-md-none my-auto">
+
+                <a class="nav-link" href="#" id="menuNavbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <img src="./images/icons/list-dark.png" alt="">
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="menuNavbarDropdown">
+                    <!-- link to another pages with icons -->
+                    <a href="" class="adverts dropdown-item">
+                        <img class="mx-auto" src="./images/icons/search.png" alt=""> Adverts
+                        <!-- <h6 class="mx-auto">Adverts</h6> -->
+                    </a>
+                    <a href="" class="messages dropdown-item">
+                        <img src="./images/icons/messenger.png" alt=""> Messages
+                        <!-- <p>Messages</p> -->
+                    </a>
+                    <a href="" class="saved dropdown-item">
+                        <img src="./images/icons/heart.png" alt=""> Saved
+                        <!-- <p>Saved</p> -->
+                    </a>
+                    <a href="" class="signIn dropdown-item">
+                        <img src="./images/icons/user.png" alt=""> Sign in
+                        <!-- <p>Sign in</p> -->
+                    </a>
+                    <!-- ad btn -->
+                    <a href="" class="dropdown-item">
+                        <div class="add my-auto ">
+                            <div class="btn btn-outline-success">
+                                <img class="btn-img my-auto" src="./images/icons/plus-green.png"> Place an Ad
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- gren "Place an Ad" btn -->
+        <div class="add my-auto d-none d-md-block">
+            <div class="btn btn-outline-success">
+                <img class="btn-img my-auto" src="./images/icons/plus-green.png"> Place an Ad
+            </div>
+        </div>
+
+        <!-- icons for another page -->
+        <div class="otherPages my-auto row justify-content-between d-none d-md-flex">
+            <a href="" class="adverts">
+                <img class="mx-auto" src="./images/icons/search.png" alt="">
+                <!-- <h6 class="mx-auto">Adverts</h6> -->
+            </a>
+            <a href="" class="messages">
+                <img src="./images/icons/messenger.png" alt="">
+                <!-- <p>Messages</p> -->
+            </a>
+            <a href="" class="saved">
+                <img src="./images/icons/heart.png" alt="">
+                <!-- <p>Saved</p> -->
+            </a>
+            <a href="" class="signIn">
+                <img src="./images/icons/user.png" alt="">
+                <!-- <p>Sign in</p> -->
+            </a>
+        </div>
+
+    </div>
+    <!-- navs -->
+    <div class="navs">
+        <!-- categories side nav bar -->
+        <div class="category-nav" id="catNav">
+            <div class="closeNav" onclick="closeNav()">
+                <img src="./images/icons/close.png" alt="">
+            </div>
+            <ul>
+                <li onclick="openSubNav()">
+                    Clothes and shoes <i class='fas fa-tshirt'></i>
+                </li>
+                <li>
+                    For the home <i class='fas fa-home'></i>
+                </li>
+                <li>
+                    Books and education <i class='fas fa-book-reader'></i>
+                </li>
+                <li>
+                    Kids world <i class='fas fa-baby-carriage'></i>
+                </li>
+                <li>
+                    Hobby and sport <i class='fas fa-futbol'></i>
+                </li>
+                <li>
+                    Electronnics <i class='fas fa-plug'></i>
+                </li>
+                <li>
+                    Car belongings <i class='fas fa-car'></i>
+                </li>
+                <li>
+                    Pets <i class='fas fa-cat'></i>
+                </li>
+                <li>
+                    Other
+                </li>
+            </ul>
+        </div>
+        <!-- sub categories side nav bar -->
+        <div class="category-nav" id="subCatNav">
+            <div class="closeNav" onclick="closeSubNav()">
+                <img src="./images/icons/close.png" alt="">
+            </div>
+            <ul>
+                <li><a href="">Hats and Scarfs</a></li>
+                <li><a href="">Jackets and Coats</a></li>
+                <li><a href="">Suits</a></li>
+                <li><a href="">Dresses and Skirts</a></li>
+                <li><a href="">Shirts and T-shirts</a></li>
+                <li><a href="">Jeans and Trousers</a></li>
+                <li><a href="">Shoes</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- user data -->
+    <div class="user py-4 px-5 ">
+
+        <div class="row d-flex justify-content-center">
+            <div class="mx-5 my-auto ">
+                <div class="user-img" style="background-image: url(./images/user-avatar.jpg);"></div>
+                <h4 class="text-center">Full Name</h4>
+            </div>
+            <div class="data mx-5 my-auto">
+                <p><strong>Location:</strong> City/Country</p>
+                <p><strong>email:</strong> someone mail.ru</p>
+                <p><strong>phone:</strong> +777777777</p>
+                <p><strong>social media:</strong> whatsapp</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- history of products-->
+    <div class="history p-5">
+        <div class="justify-content-around col">
+
+            <h3 class="text-center mb-5">Products History</h3>
+            <div>
+                <a class="prod-card" href="">
+                    <!-- image -->
+                    <div class="prod-card-img" style="background-image: url(./images/dress.jpg);"></div>
+                    <!-- text -->
+                    <div class="prod-card-text col  ">
+                        <div class="row  justify-content-between">
+                            <p>User name/ Location</p>
+                            <p class=" d-none d-md-block">post date</p>
+                        </div>
+                        <p class=" d-md-none d-block">post date</p>
+                        <p>Product name</p>
+                    </div>
+                </a>
+                <a class="prod-card" href="">
+                    <!-- image -->
+                    <div class="prod-card-img" style="background-image: url(./images/dress.jpg);"></div>
+                    <!-- text -->
+                    <div class="prod-card-text col  ">
+                        <div class="row  justify-content-between">
+                            <p>User name/ Location</p>
+                            <p class=" d-none d-md-block">post date</p>
+                        </div>
+                        <p class=" d-md-none d-block">post date</p>
+                        <p>Product name</p>
+                    </div>
+                </a>
+                <a class="prod-card" href="">
+                    <!-- image -->
+                    <div class="prod-card-img" style="background-image: url(./images/dress.jpg);"></div>
+                    <!-- text -->
+                    <div class="prod-card-text col  ">
+                        <div class="row  justify-content-between">
+                            <p>User name/ Location</p>
+                            <p class=" d-none d-md-block">post date</p>
+                        </div>
+                        <p class=" d-md-none d-block">post date</p>
+                        <p>Product name</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- active products -->
+    <div class="active d-flex p-5">
+        <div class="justify-content-around col">
+            <h3 class="text-center mb-5">Active Products</h3>
+            <div>
+                <a class="prod-card" href="">
+                    <!-- image -->
+                    <div class="prod-card-img" style="background-image: url(./images/dress.jpg);"></div>
+                    <!-- text -->
+                    <div class="prod-card-text col  ">
+                        <div class="row  justify-content-between">
+                            <p>User name/ Location</p>
+                            <p class=" d-none d-md-block">post date</p>
+                        </div>
+                        <p class=" d-md-none d-block">post date</p>
+                        <p>Product name</p>
+                    </div>
+                </a>
+                <a class="prod-card" href="">
+                    <!-- image -->
+                    <div class="prod-card-img" style="background-image: url(./images/dress.jpg);"></div>
+                    <!-- text -->
+                    <div class="prod-card-text col  ">
+                        <div class="row  justify-content-between">
+                            <p>User name/ Location</p>
+                            <p class=" d-none d-md-block">post date</p>
+                        </div>
+                        <p class=" d-md-none d-block">post date</p>
+                        <p>Product name</p>
+                    </div>
+                </a>
+                <a class="prod-card" href="">
+                    <!-- image -->
+                    <div class="prod-card-img" style="background-image: url(./images/dress.jpg);"></div>
+                    <!-- text -->
+                    <div class="prod-card-text col  ">
+                        <div class="row  justify-content-between">
+                            <p>User name/ Location</p>
+                            <p class=" d-none d-md-block">post date</p>
+                        </div>
+                        <p class=" d-md-none d-block">post date</p>
+                        <p>Product name</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="makeNewPostProduct ">
+        <a href="">
+            <!-- <img src="./images/icons/add.png" alt=""> -->
+        </a>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+.user {
+    background-color: #1C89A1;
+    width: 100%;
+    color: #F0E9E8;
+}
+
+.user .row {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.user .user-img {
+    background: center/cover no-repeat;
+    border-radius: 100%;
+    margin: auto 0;
+    width: 20vmin;
+    height: 20vmin;
+}
+
+
+/* history */
+
+.history {
+    background-color: #F0E9E8;
+    width: 100%;
+    color: #003044;
+}
+
+
+/* active */
+
+.active {
+    background-color: #FDA923;
+    width: 100%;
+    color: #F0E9E8;
+}
+
+
+/* add new product btn fixed at the bottom */
+
+.makeNewPostProduct {
+    background: #1C89A1;
+    border-radius: 8px 8px 0 0;
+    width: 8vmin;
+    height: 8vmin;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    right: 5%;
+    transition: ease-in-out .3s;
+}
+
+.makeNewPostProduct:hover {
+    background: #003044;
+}
+
+.makeNewPostProduct a {
+    background: url(../images/icons/add.png) center/ cover no-repeat;
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    top: 30%;
+    left: 30%;
+    /* bottom: 50%;
+        right: 50%; */
+    width: 50%;
+    height: 50%;
+}
+
+@media(max-width:770px) {
+    .user .row {
+        width: 90%;
+    }
+}
+
+@media(max-width:420px) {
+    .user .row {
+        width: 100%;
+        font-size: 12px;
+    }
+    .user .user-img {
+        width: 30vmin;
+        height: 30vmin;
+    }
+}

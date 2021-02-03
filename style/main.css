@@ -1,0 +1,135 @@
+/* main */
+
+.main {
+    background-color: #1C89A1;
+    width: 100%;
+}
+
+
+/* text in main */
+
+.main .text-white {
+    width: 45%;
+}
+
+
+/* form */
+
+.welcomeForm {
+    flex-direction: column;
+    width: 50%;
+}
+
+.welcomeForm form {
+    width: 90%;
+    min-width: 340px;
+    max-width: 540px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 5px 45px #002F46;
+    position: relative;
+}
+
+.fakeBtn-img {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.fakeBtn-img img {
+    width: 15px;
+}
+
+.fakeBtn-img input,
+.fakeBtn-img div {
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+.kz-cities ul,
+.btn-outline-info {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.kz-cities ul li {
+    padding: 3% 5%;
+    width: 100%;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 180px;
+    overflow-x: hidden;
+}
+
+
+/* ad block */
+
+.ad-block {
+    width: 100%;
+    background: #003044;
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-block .categ-icon-container {
+    width: 90%;
+    margin: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.categ-icon-block {
+    text-align: center;
+    width: 11vmin;
+    height: 15vmin;
+    display: flex;
+    flex-basis: 12vmin;
+    flex-direction: column;
+    margin: 0 1%;
+}
+
+.categ-icon {
+    border-radius: 100%;
+    width: 10vmin;
+    height: 10vmin;
+    background-color: aliceblue;
+    position: relative;
+    margin: 4% auto;
+    transition: ease-in-out .3s;
+}
+
+.categ-icon-block:hover .categ-icon {
+    background-color: #FDA923;
+    color: white;
+}
+
+.categ-icon i {
+    margin: 3vmin auto;
+    font-size: 4vmin;
+}
+
+@media(max-width:420px) {
+    .ad-block .categ-icon-container {
+        margin: 5% auto;
+    }
+    .categ-icon-block {
+        justify-content: center;
+        width: 23vmin;
+        height: 30vmin;
+        margin: 0 5%;
+    }
+    .categ-icon {
+        width: 20vmin;
+        height: 20vmin;
+        margin: 0 auto;
+    }
+    .categ-icon i {
+        margin: 6vmin auto;
+        font-size: 8vmin;
+    }
+}
