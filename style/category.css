@@ -10,15 +10,15 @@
 }
 
 .search input {
-    width: calc(100% - 3vmin);
-    padding: 10px 0;
+    width: calc(100% - 4vmin);
+    padding: 8px;
     font-size: 16px;
     color: #003044;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #003044;
+    border-radius: 5px;
     outline: none;
-    background: transparent;
+    background: white;
 }
 
 .search label {
@@ -34,7 +34,7 @@
 
 .search img {
     position: absolute;
-    bottom: 50%;
+    bottom: 55%;
     right: 0;
     width: 3vmin;
 }
@@ -45,9 +45,9 @@
 
 .search input:focus~label,
 .search input:valid~label {
-    top: -20px;
+    top: -30px;
     left: 0;
-    color: #FEC061;
+    color: #003044;
     font-size: 12px;
 }
 
@@ -72,5 +72,11 @@
     .search {
         width: 80%;
         margin: 8% auto 0;
+    }
+    .search input {
+        width: calc(100% - 6vmin);
+    }
+    .search img {
+        width: 5vmin;
     }
 }

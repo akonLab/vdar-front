@@ -23,7 +23,7 @@
 
 <body>
     <!-- header -->
-    <div class="header p-2 d-flex row justify-content-around">
+    <div class="header p-2 d-flex   justify-content-around">
         <div class="logo my-auto">
             <img class="my-auto" src="./images/vdar-orange.png" alt="">
         </div>
@@ -47,10 +47,7 @@
                         <img class="mx-auto" src="./images/icons/search.png" alt=""> Adverts
                         <!-- <h6 class="mx-auto">Adverts</h6> -->
                     </a>
-                    <a href="" class="messages dropdown-item">
-                        <img src="./images/icons/messenger.png" alt=""> Messages
-                        <!-- <p>Messages</p> -->
-                    </a>
+
                     <a href="" class="saved dropdown-item">
                         <img src="./images/icons/heart.png" alt=""> Saved
                         <!-- <p>Saved</p> -->
@@ -59,6 +56,23 @@
                         <img src="./images/icons/user.png" alt=""> Sign in
                         <!-- <p>Sign in</p> -->
                     </a>
+                    <!-- <a href="" class=" dropdown-item"></a>
+                  
+                    <div class="lang my-auto d-flex row justify-content-around  ">
+                        <label for="kz">
+                            <input type="radio" value="kz" name="lang" id="kz">
+                            <p class="lp ">KZ</p> 
+                        </label>
+                        <label for="ru">
+                            <input type="radio" value="ru" name="lang" id="ru" >
+                            <p class="lp">RU</p>
+                        </label>
+                        <label for="en">
+                            <input type="radio" value="en" name="lang" id="en" checked>
+                            <p class="lp">EN</p>
+                        </label>
+                    </div>
+                    </a> -->
                     <!-- ad btn -->
                     <a href="" class="dropdown-item">
                         <div class="add my-auto ">
@@ -84,10 +98,7 @@
                 <img class="mx-auto" src="./images/icons/search.png" alt="">
                 <!-- <h6 class="mx-auto">Adverts</h6> -->
             </a>
-            <a href="" class="messages">
-                <img src="./images/icons/messenger.png" alt="">
-                <!-- <p>Messages</p> -->
-            </a>
+
             <a href="" class="saved">
                 <img src="./images/icons/heart.png" alt="">
                 <!-- <p>Saved</p> -->
@@ -98,61 +109,231 @@
             </a>
         </div>
 
-    </div>
+        <!-- icons for another page -->
+        <div class="lang my-auto row justify-content-around d-none d-md-flex">
+            <label for="kz">
+           <input type="radio" value="kz" name="lang" id="kz">
+            <p class="lp ">KZ</p> 
+        </label>
+            <label for="ru">
+             <input type="radio" value="ru" name="lang" id="ru" >
+             <p class="lp">RU</p>
+        </label>
+            <label for="en">
+           <input type="radio" value="en" name="lang" id="en" checked>
+           <p class="lp">EN</p>
+       </label>
+        </div>
 
+    </div>
+    <div class="header-space"></div>
     <!-- navs -->
     <div class="navs">
+
         <!-- categories side nav bar -->
-        <div class="category-nav" id="catNav">
-            <div class="closeNav" onclick="closeNav()">
-                <img src="./images/icons/close.png" alt="">
+        <div class="category-nav  " id="catNav">
+            <div class="dark-line"></div>
+            <div class="category-nav-body d-flex  justify-content-around p-4">
+
+                <div class="d-md-block d-none">
+                    <ul>
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-tshirt'></i> -->
+                                Clothes and shoes
+                            </h5>
+                        </li>
+                        <li><a href="">Hats and Scarfs</a></li>
+                        <li><a href="">Jackets and Coats</a></li>
+                        <li><a href="">Suits</a></li>
+                        <li><a href="">Dresses and Skirts</a></li>
+                        <li><a href="">Shirts and T-shirts</a></li>
+                        <li><a href="">Jeans and Trousers</a></li>
+                        <li><a href="">Shoes</a></li>
+                        <br>
+
+
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-home'></i> -->
+                                For the home
+                            </h5>
+                        </li>
+                        <li>Furniture</li>
+                        <li>Blankets and bed linen</li>
+                    </ul>
+                </div>
+                <div class="d-md-block d-none">
+                    <ul>
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-book-reader'></i> -->
+                                Books and education
+                            </h5>
+                        </li>
+                        <li><a href="">Let's learn English</a></li>
+                        <li><a href="">Technical Books</a></li>
+                        <li><a href="">Literature</a></li>
+                        <li><a href="">Other books</a></li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-baby-carriage'></i> -->
+                                Kids world
+                            </h5>
+                        </li>
+                        <li><a href="">Shoes</a></li>
+                        <li><a href="">Clothes</a></li>
+                        <li><a href="">Toys</a></li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-futbol'></i> -->
+                                Hobby and sport
+                            </h5>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="d-md-block d-none">
+                    <ul>
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-plug'></i> -->
+                                Electronnics
+                            </h5>
+                        </li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-car'></i> -->
+                                Car belongings
+                            </h5>
+                        </li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-cat'></i> -->
+                                Pets
+                            </h5>
+                        </li>
+                        <li><a href="">Cats and kittens</a></li>
+                        <li><a href="">Dogs and puoies</a></li>
+                        <li><a href="">Other pets</a></li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                Other
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-md-none d-block">
+                    <ul>
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-tshirt'></i> -->
+                                Clothes and shoes
+                            </h5>
+                        </li>
+                        <li><a href="">Hats and Scarfs</a></li>
+                        <li><a href="">Jackets and Coats</a></li>
+                        <li><a href="">Suits</a></li>
+                        <li><a href="">Dresses and Skirts</a></li>
+                        <li><a href="">Shirts and T-shirts</a></li>
+                        <li><a href="">Jeans and Trousers</a></li>
+                        <li><a href="">Shoes</a></li>
+                        <br>
+
+
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-home'></i> -->
+                                For the home
+                            </h5>
+                        </li>
+                        <li>Furniture</li>
+                        <li>Blankets and bed linen</li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-book-reader'></i> -->
+                                Books and education
+                            </h5>
+                        </li>
+                        <li><a href="">Let's learn English</a></li>
+                        <li><a href="">Technical Books</a></li>
+                        <li><a href="">Literature</a></li>
+                        <li><a href="">Other books</a></li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-baby-carriage'></i> -->
+                                Kids world
+                            </h5>
+                        </li>
+                        <li><a href="">Shoes</a></li>
+                        <li><a href="">Clothes</a></li>
+                        <li><a href="">Toys</a></li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-futbol'></i> -->
+                                Hobby and sport
+                            </h5>
+                        </li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-plug'></i> -->
+                                Electronnics
+                            </h5>
+                        </li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-car'></i> -->
+                                Car belongings
+                            </h5>
+                        </li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                <!-- <i class='fas fa-cat'></i> -->
+                                Pets
+                            </h5>
+                        </li>
+                        <li><a href="">Cats and kittens</a></li>
+                        <li><a href="">Dogs and puoies</a></li>
+                        <li><a href="">Other pets</a></li>
+                        <br>
+
+                        <li>
+                            <h5>
+                                Other
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li onclick="openSubNav()">
-                    Clothes and shoes <i class='fas fa-tshirt'></i>
-                </li>
-                <li>
-                    For the home <i class='fas fa-home'></i>
-                </li>
-                <li>
-                    Books and education <i class='fas fa-book-reader'></i>
-                </li>
-                <li>
-                    Kids world <i class='fas fa-baby-carriage'></i>
-                </li>
-                <li>
-                    Hobby and sport <i class='fas fa-futbol'></i>
-                </li>
-                <li>
-                    Electronnics <i class='fas fa-plug'></i>
-                </li>
-                <li>
-                    Car belongings <i class='fas fa-car'></i>
-                </li>
-                <li>
-                    Pets <i class='fas fa-cat'></i>
-                </li>
-                <li>
-                    Other
-                </li>
-            </ul>
-        </div>
-        <!-- sub categories side nav bar -->
-        <div class="category-nav" id="subCatNav">
-            <div class="closeNav" onclick="closeSubNav()">
-                <img src="./images/icons/close.png" alt="">
-            </div>
-            <ul>
-                <li><a href="">Hats and Scarfs</a></li>
-                <li><a href="">Jackets and Coats</a></li>
-                <li><a href="">Suits</a></li>
-                <li><a href="">Dresses and Skirts</a></li>
-                <li><a href="">Shirts and T-shirts</a></li>
-                <li><a href="">Jeans and Trousers</a></li>
-                <li><a href="">Shoes</a></li>
-            </ul>
         </div>
     </div>
+
     <!-- main -->
     <div class="main p-3">
         <h3 class="text-center">Saved products</h3>
@@ -160,7 +341,7 @@
         <!-- search -->
         <form action="" method="" class="search">
             <input type="text" name="search">
-            <img onclick="searchBtnTap()" src="./images/icons/search-orange.png" alt="">
+            <img onclick="searchBtnTap()" src="./images/icons/search.png" alt="">
             <label>search</label>
             <div hidden>
                 <input id="realSearchBtn" type="submit">

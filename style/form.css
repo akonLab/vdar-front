@@ -1,5 +1,5 @@
 html {
-    background-color: #FEC061;
+    background-color: #FDA923;
 }
 
 #AuthFormBody {
@@ -14,7 +14,8 @@ html {
     width: 400px;
     padding: 0;
     background: #1C89A1;
-    box-shadow: 0 15px 25px #003044;
+    /* background: white; */
+    /* box-shadow: 0 15px 25px #003044; */
     border-radius: 10px;
 }
 
@@ -40,6 +41,8 @@ html {
     border-radius: 0 10px 0 0;
     background-color: #1C89A1;
     color: #FEC061;
+    /* background: white;
+    color: #003044; */
 }
 
 .form-head div:last-child {
@@ -55,18 +58,20 @@ html {
 
 .form-box .form-line-box {
     position: relative;
+    width: 100%;
 }
 
 .form-box .form-line-box input {
     width: 100%;
-    padding: 10px 0;
+    padding: 8px;
     font-size: 16px;
-    color: #fff;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #fff;
+    /* border-bottom: 1px solid #fff; */
+    /* border: 1px solid #003044; */
+    border-radius: 5px;
     outline: none;
-    background: transparent;
+    background: white;
 }
 
 .form-box .form-line-box label {
@@ -83,9 +88,9 @@ html {
 .form-box .form-line-box .btn-group-dropdown,
 .form-box .form-line-box .btn {
     border: 1px solid #F0E9E8;
+    color: #F0E9E8;
     border-radius: 5px;
     transition: ease-in-out .3s;
-    color: #F0E9E8;
 }
 
 .form-box .form-line-box .btn-group-dropdown:hover,
@@ -106,13 +111,21 @@ html {
 
 .form-box .form-line-box .img-btn {
     background: center/cover no-repeat;
-    border: 2px solid #F0E9E8;
+    background-color: white;
     border-radius: 5px;
     padding: 2%;
     width: 30%;
     height: 12vmin;
     border-radius: 8px;
+    position: relative;
     transition: ease-in-out .3s;
+}
+
+.form-box .form-line-box .img-btn img {
+    width: 30px;
+    top: calc(50% - 15px);
+    right: calc(50% - 15px);
+    position: absolute;
 }
 
 .form-box .form-line-box .agree {
@@ -147,7 +160,7 @@ html {
 
 .form-box .form-line-box input:focus~label,
 .form-box .form-line-box input:valid~label {
-    top: -20px;
+    top: -30px;
     left: 0;
     color: #FEC061;
     font-size: 12px;
@@ -158,4 +171,56 @@ html {
         top: 55%;
         width: 85%;
     }
+}
+
+
+/* @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css); */
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    width: 100%;
+    float: left;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating label {
+    color: #ddd;
+    float: right;
+}
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #FDA923;
+}
+
+
+/* hover previous stars in list */
+
+.rating>input:checked+label:hover,
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+.rating>input:checked~label:hover~label {
+    color: #FDA923;
 }
