@@ -26,8 +26,15 @@
 <body>
     <!-- header -->
     <div class="header p-2 d-flex   justify-content-around">
-        <div class="logo my-auto">
+        <a class="logo my-auto" href="">
             <img class="my-auto" src="./images/vdar-orange.png" alt="">
+        </a>
+
+        <!-- gren "Place an Ad" btn -->
+        <div class="add my-auto d-none d-md-block">
+            <div class="btn btn-info">
+                <img class="btn-img my-auto" src="./images/icons/plus-white.png"> Place an Ad
+            </div>
         </div>
 
         <div class="row">
@@ -45,41 +52,25 @@
 
                 <div class="dropdown-menu" aria-labelledby="menuNavbarDropdown">
                     <!-- link to another pages with icons -->
+                    <a href="" class="profile dropdown-item">
+                        <img src="./images/icons/user.png" alt=""> Profile
+                    </a>
                     <a href="" class="adverts dropdown-item">
-                        <img class="mx-auto" src="./images/icons/search.png" alt=""> Adverts
-                        <!-- <h6 class="mx-auto">Adverts</h6> -->
+                        <img src="./images/icons/search.png" alt=""> Adverts
                     </a>
 
                     <a href="" class="saved dropdown-item">
                         <img src="./images/icons/heart.png" alt=""> Saved
-                        <!-- <p>Saved</p> -->
                     </a>
                     <a href="" class="signIn dropdown-item">
-                        <img src="./images/icons/user.png" alt=""> Sign in
-                        <!-- <p>Sign in</p> -->
+                        <img src="./images/icons/logout-2.png" alt=""> Sign in
                     </a>
-                    <!-- <a href="" class=" dropdown-item"></a>
-                  
-                    <div class="lang my-auto d-flex row justify-content-around  ">
-                        <label for="kz">
-                            <input type="radio" value="kz" name="lang" id="kz">
-                            <p class="lp ">KZ</p> 
-                        </label>
-                        <label for="ru">
-                            <input type="radio" value="ru" name="lang" id="ru" >
-                            <p class="lp">RU</p>
-                        </label>
-                        <label for="en">
-                            <input type="radio" value="en" name="lang" id="en" checked>
-                            <p class="lp">EN</p>
-                        </label>
-                    </div>
-                    </a> -->
+
                     <!-- ad btn -->
                     <a href="" class="dropdown-item">
                         <div class="add my-auto ">
-                            <div class="btn btn-outline-success">
-                                <img class="btn-img my-auto" src="./images/icons/plus-green.png"> Place an Ad
+                            <div class="btn btn-info">
+                                <img class="btn-img my-auto" src="./images/icons/plus-white.png"> Place an Ad
                             </div>
                         </div>
                     </a>
@@ -87,15 +78,12 @@
             </div>
         </div>
 
-        <!-- gren "Place an Ad" btn -->
-        <div class="add my-auto d-none d-md-block">
-            <div class="btn btn-outline-success">
-                <img class="btn-img my-auto" src="./images/icons/plus-green.png"> Place an Ad
-            </div>
-        </div>
-
         <!-- icons for another page -->
-        <div class="otherPages my-auto row justify-content-between d-none d-md-flex">
+        <div class="otherPages my-auto row justify-content-around d-none d-md-flex">
+            <a href="" class="profile">
+                <img src="./images/icons/user.png" alt="">
+                <!-- <p>Sign in</p> -->
+            </a>
             <a href="" class="adverts">
                 <img class="mx-auto" src="./images/icons/search.png" alt="">
                 <!-- <h6 class="mx-auto">Adverts</h6> -->
@@ -106,12 +94,12 @@
                 <!-- <p>Saved</p> -->
             </a>
             <a href="" class="signIn">
-                <img src="./images/icons/user.png" alt="">
+                <img src="./images/icons/logout-2.png" alt="">
                 <!-- <p>Sign in</p> -->
             </a>
         </div>
 
-        <!-- icons for another page -->
+        <!-- lang -->
         <div class="lang my-auto row justify-content-around d-none d-md-flex">
             <label for="kz">
            <input type="radio" value="kz" name="lang" id="kz">
@@ -129,6 +117,7 @@
 
     </div>
     <div class="header-space"></div>
+
     <!-- navs -->
     <div class="navs">
 
@@ -337,9 +326,9 @@
     </div>
 
     <!-- main -->
-    <div class="main p-5 d-flex  justify-content-around">
+    <div class="main p-5 d-flex">
         <div class="d-flex justify-content-around row">
-            <div class="welcomeForm col">
+            <div class="welcomeForm p-lg-3 my-lg-5 ml-0 ml-lg-5">
                 <form action="" method="" class="px-4 mx-auto py-4">
                     <h2 class="text-center">Welcome to Vdar</h2>
 
@@ -379,74 +368,99 @@
                         <input type="text" id="locationType" name="location">
                     </div>
                     <!-- find button -->
-                    <button class="my-4 btn btn-outline-info">Find ads</button>
+                    <button class="my-4 btn btn-primary">Find ads</button>
                 </form>
             </div>
-            <div class="p-4 col  d-none d-md-block text-white text-center">
-                <h1> "Sharing is caring and fun))"</h1>
+            <div class="p-4   freeSpace">
+
+                <!-- d-none d-md-block -->
+                <h1 class=" text-white text-center" hidden> "Sharing is caring and fun))"</h1>
             </div>
         </div>
     </div>
 
     <!-- блок объявлений -->
     <div class="ad-block p-5">
-        <h1 class="text-center text-white">Categories</h1>
+        <h1 class="text-left">Our categories:</h1>
 
         <div class="categ-icon-container">
 
-            <a class="categ-icon-block ">
+            <a class="categ-icon-block" href="">
                 <div class="categ-icon">
-                    <img src="./images/categories_icons/clothes-hanger.png" alt="">
+                    <img src="./images/categories_icons/polo-shirt.png" alt="">
                 </div>
-                <p class="text-white">Clothes</p>
+                <p>Clothes</p>
             </a>
-            <a class="categ-icon-block  ">
+            <a class="categ-icon-block" href="">
                 <div class="categ-icon">
-                    <img src="./images/categories_icons/home.png" alt="">
+                    <img src="./images/categories_icons/house.png" alt="">
 
                 </div>
-                <p class="text-white">Home</p>
+                <p>Home</p>
             </a>
-            <a class="categ-icon-block  ">
+            <a class="categ-icon-block " href="">
                 <div class="categ-icon">
-                    <img src="./images/categories_icons/reading.png" alt="">
+                    <img src="./images/categories_icons/baby.png" alt="">
                 </div>
-                <p class="text-white">Education</p>
+                <p>Kids</p>
             </a>
-            <a class="categ-icon-block ">
+            <a class="categ-icon-block" href="">
                 <div class="categ-icon">
-                    <img src="./images/categories_icons/boy.png" alt="">
+                    <img src="./images/categories_icons/dog.png" alt="">
                 </div>
-                <p class="text-white">Kids</p>
+                <p>Pets</p>
             </a>
-            <a class="categ-icon-block  ">
-                <div class="categ-icon">
-                    <img src="./images/categories_icons/sport.png" alt="">
-                </div>
-                <p class="text-white">Sport</p>
-            </a>
-            <a class="categ-icon-block  ">
+            <a class="categ-icon-block" href="">
                 <div class="categ-icon">
                     <img src="./images/categories_icons/device.png" alt="">
                 </div>
-                <p class="text-white">Electronics</p>
+                <p>Electronics</p>
             </a>
-            <a class="categ-icon-block ">
+
+            <a class="categ-icon-block" href="">
                 <div class="categ-icon">
-                    <img src="./images/categories_icons/car.png" alt="">
+                    <img src="./images/categories_icons/books.png" alt="">
                 </div>
-                <p class="text-white">Car</p>
+                <p>Books & Education</p>
             </a>
-            <a class="categ-icon-block ">
+            <a class="categ-icon-block  " href="">
                 <div class="categ-icon">
-                    <img src="./images/categories_icons/pets.png" alt="">
+                    <img src="./images/categories_icons/cycling.png" alt="">
                 </div>
-                <p class="text-white">Pets</p>
+                <p>Hobby & Sport</p>
+            </a>
+            <a class="categ-icon-block " href="">
+                <div class="categ-icon">
+                    <img src="./images/categories_icons/eco-car.png" alt="">
+                </div>
+                <p>Car belongings</p>
+            </a>
+
+            <a class="categ-icon-block " href="">
+                <div class="categ-icon">
+                    <img src="./images/categories_icons/magnifying-glass.png" alt="">
+                </div>
+                <p>Other</p>
             </a>
 
         </div>
     </div>
 
+    <!-- footer -->
+    <div class="footer p-5">
+        <div class="footer-content mx-auto">
+            <div>
+                <a href="">Terms of use</a>
+                <a href="">Instructions</a>
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <a href="">About Vdar</a>
+                <a href="">Contacts</a>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

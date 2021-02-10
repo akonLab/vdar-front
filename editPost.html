@@ -60,7 +60,7 @@
 
             <!--product description-->
             <div class="form-line-box">
-                <input type="text" name="desc">
+                <textarea type="text" name="desc" rows="3"></textarea>
                 <label>Description</label>
             </div>
 
@@ -97,7 +97,7 @@
             </div>
 
             <!--add photo btn-->
-            <div class="form-line-box d-flex justify-content-around mb-4">
+            <div class="form-line-box d-flex justify-content-around mb-3">
                 <div class="img-btn" onclick="addImage('image')" style="background-image: url();">
                     <img src="./images/icons/image.png" alt="" width="30px">
                 </div>
@@ -109,10 +109,9 @@
                 </div>
             </div>
             <!-- Quality Rating -->
-            <div class="  mb-3">
-
-
-                <fieldset class="rating flex-row-reverse">
+            <div class="rating-box ">
+                <p class="mt-2 pl-2 ">Rate the quality of your item</p>
+                <fieldset class="rating my-auto flex-row-reverse">
 
                     <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
                     <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
@@ -124,8 +123,8 @@
                     <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
                     <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
                 </fieldset>
+
             </div>
-            <br>
             <!--submit or enter button-->
             <div class="form-line-box d-flex justify-content-center">
                 <button type="submit" class="btn mx-auto">

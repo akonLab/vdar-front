@@ -49,8 +49,8 @@
  //log reg auth btns
  function openLogBody(formType) {
      if (formType == 'openRegForm') {
-         document.getElementById("openRegForm").style.backgroundColor = "#1C89A1"
-         document.getElementById("openRegForm").style.color = "#FEC061"
+         document.getElementById("openRegForm").style.backgroundColor = "white"
+         document.getElementById("openRegForm").style.color = "#003044"
          document.getElementById("openRegForm").style.borderRadius = "10px 10px 0 0"
 
          document.getElementById("openAuthForm").style.backgroundColor = "#003044"
@@ -60,8 +60,8 @@
          document.getElementById("AuthFormBody").style.display = "none";
          document.getElementById("RegFormBody").style.display = "block";
      } else {
-         document.getElementById("openAuthForm").style.backgroundColor = "#1C89A1"
-         document.getElementById("openAuthForm").style.color = "#FEC061"
+         document.getElementById("openAuthForm").style.backgroundColor = "white"
+         document.getElementById("openAuthForm").style.color = "#003044"
          document.getElementById("openAuthForm").style.borderRadius = "10px 10px  0 0"
 
          document.getElementById("openRegForm").style.backgroundColor = "#003044"

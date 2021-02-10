@@ -62,10 +62,6 @@ a:any-link:hover {
     height: 18px;
 }
 
-.add .btn:hover .btn-img {
-    content: url(../images/icons/plus-white.png);
-}
-
 .otherPages {
     width: 25%;
 }
@@ -93,8 +89,12 @@ a:any-link:hover {
     content: url(../images/icons/heart-orange.png);
 }
 
-.signIn:hover img {
+.profile:hover img {
     content: url(../images/icons/user-orange.png);
+}
+
+.signIn:hover img {
+    content: url(../images/icons/logout-orange.png);
 }
 
 #menuNavbarDropdown:hover img {
@@ -297,7 +297,40 @@ a:any-link:hover {
     left: 10px;
 }
 
+.footer {
+    width: 100%;
+    background-color: #00324A;
+}
+
+.footer-content {
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-content .line {
+    left: 45%;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    content: "";
+    background-color: #b7c9d1;
+}
+
+.footer-content div a {
+    color: #b7c9d1;
+    transition: ease-in-out .3s;
+}
+
+.footer-content div a:hover {
+    color: white;
+}
+
 @media(max-width:770px) {
+    .otherPages {
+        width: 20%;
+    }
     .prod-card {
         width: 80%;
         height: 22vmin;
@@ -310,7 +343,7 @@ a:any-link:hover {
         margin: 8% auto 0;
     }
     .lang {
-        width: 10%;
+        width: 12%;
     }
 }
 

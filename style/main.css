@@ -1,16 +1,18 @@
 /* main */
 
 .main {
-    background-color: #FDA923;
+    background: url(../images/pexels-ketut-subiyanto-4473894.png) center/ cover no-repeat;
     width: 100%;
+    justify-content: left;
 }
 
 
 /* text in main */
 
-.main .text-white {
+
+/* .main .text-white {
     width: 45%;
-}
+} */
 
 
 /* form */
@@ -20,13 +22,18 @@
     width: 50%;
 }
 
+.freeSpace {
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+
 .welcomeForm form {
     width: 90%;
     min-width: 340px;
     max-width: 540px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0px 5px 45px #002F46;
     position: relative;
 }
 
@@ -56,12 +63,14 @@
 
 .form-line-box {
     position: relative;
+    width: 100%;
 }
 
 .form-line-box .btn-group-dropdown,
 .form-line-box .btn {
     border: 1px solid black;
     color: black;
+    width: 100%;
     border-radius: 5px;
     transition: ease-in-out .3s;
 }
@@ -84,7 +93,7 @@
 /* kz-cities */
 
 .kz-cities ul,
-.btn-outline-info {
+.btn-primary {
     width: 100%;
     border-radius: 5px;
 }
@@ -105,8 +114,9 @@
 
 .ad-block {
     width: 100%;
-    background: #1C89A1;
+    background: white;
     display: flex;
+    color: #002F46;
     flex-direction: column;
 }
 
@@ -134,7 +144,7 @@
     border-radius: 100%;
     width: 10vmin;
     height: 10vmin;
-    background-color: aliceblue;
+    background-color: #FCF6F4;
     position: relative;
     margin: 4% auto;
     transition: ease-in-out .3s;
@@ -142,7 +152,7 @@
 
 .categ-icon-block:hover .categ-icon {
     background-color: #FDA923;
-    color: white;
+    color: #002F46;
 }
 
 .categ-icon img {
